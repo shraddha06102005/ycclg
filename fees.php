@@ -1,0 +1,19 @@
+<?php
+   $cast=$_POST['cast'];
+   if($cast=="OPEN")
+   {
+		  include("form.php");
+   }
+   if($cast=="OBC")
+   {
+		  include("formobc.php");
+   }
+   if($cast=="SC/ST")
+   {
+		  include("formsc.php");
+   }
+   if($cast=="NT-A/B/C")
+   {
+		  include("formnt.php");
+   }
+?>

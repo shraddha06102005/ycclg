@@ -1,0 +1,307 @@
+<html>
+<head>
+<style>
+*{
+	text-decoration:none;
+}
+.navbar{
+			background:darkblue;
+			font-family:none;
+			padding-right:15px;
+			padding-left:15px;
+			margin-bottom:20px;
+			color:white;
+}
+.navdiv{
+		display:flex;
+		align-items:center;
+		justify-content:space-between;
+		padding:10px;
+	font-size:20px;
+	margin-bottom:20px;
+}
+.logo{
+		padding-left:150px;
+}
+.logo5{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background-color: darkblue;
+color:white;
+}
+.footer{
+		
+		background-color: darkblue;
+		color:white;
+		align-items:center;
+}
+.con{
+		padding-right:500px;
+}
+.t{
+		font-size:17px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.txt{
+		font-size:20px;
+}
+.txt1{
+		font-size:35px;
+}
+.txt2{
+		font-size:18px;
+}
+.t1{
+line-height:20px;
+padding-right:170px;
+}
+.t{
+line-height:25px;
+}
+.about{
+		display:flex;
+}
+.t2{
+	font-family:calibri;
+	font-size:20px;
+	padding-left:15px;
+	padding-right:20px;
+}
+.btn{
+	 width: 100%;
+  height: 50px;
+  background: darkblue;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+  border: none;
+
+}
+</style>
+</head>
+<body>
+			<nav class="navbar">
+			<div class="navdiv">
+			
+			<div class="logo"><img src="s.png" width="150" height="150" border="5"></img></a></div>
+			<div class="t1">
+			<div class="txt">Maharashtra State Board Technical Education Society's (MSBTE),</div><br>
+			<div class="txt1">Government Polytechnic, Miraj</div><br>
+			<div class="txt2">Near Maji Sainik Vasahat, Vidyanagar Tal. Miraj, District. Sangli</div>
+			</div>
+			<div class="t">
+				DTE Code : 6015<br>
+				MSBTE Code : 0131<br>
+				<i class="fa fa-envelope" aria-hidden="true"></i>Email : gpmiraj@gmail.com<br>
+             OFFICE (02332231423)<br>
+				
+				<input type="text" placeholder="Search"><Button>Search</button>
+				</div>
+				</nav>
+				<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="i1.jpg" width="1000" height="500" align="center" border="5px">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="i2.jpg" width="1000" height="500" align="center"   border="5px">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="i3.jpg" width="1000" height="500" align="center"  border="5px">
+    <div class="text">Caption Three</div>
+  </div>
+	<div class="mySlides fade">
+    <div class="numbertext">4/ 5</div>
+    <img src="i4.jpg" width="1000" height="500" align="center"  border="5px">
+    <div class="text">Caption Four</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="i5.jpg" width="1000" height="500" align="center"  border="5px">
+    <div class="text">Caption Five</div>
+  </div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div><br>
+<h1 align="center">-ABOUT US-</h1><hr>
+<div class="about">
+		<div class="t2"><p> Government Polytechnic, Miraj (Dist. Sangli), established in 1990 presently running programmes in Civil Engg., Computer Engg., Mechanical Engg., Medical Electronics Engg. and Polymer Technology. All the programmes are recognised by AICTE, New Delhi and affiliated to MSBTE, Mumbai.
+Miraj is easily connected by road and rail transport. The institute is situated near MIDC area which strengthens the Industry-Institute relationship. In its constant endeavour of instilling quality technical education.
+ Institute is engaged in various curricular and co-curricular activities such as paper presentation competition and participation in various state level project 
+ competition. Institute is committed to develop technologically competent industry-ready technicians having high values and national concern.</p>
+ <p>In its constant endeavour of instilling quality technical education, Government Polytechnic, Miraj is engaged in various curricular and co curricular activities such 
+ as Paper presentation Competition, participation in various State Level Project Competition etc. </p>
+ </div>
+
+
+<img src="Minster1.jpg" width="400" height="300"><br></div><hr>
+
+<h1 align="center">SELECT YOUR DEPARTMENT FOR FEEDBACK!!</h1>
+<button class="btn">DEPARTMENT OF COMPUTER ENGINEERING</button><br><br>
+<button class="btn">DEPARTMENT OF MECHANICAL ENGINEERING</button><br><br>
+<button class="btn">DEPARTMENT OF CIVIL Engineering</button><br><br>
+<button class="btn">DEPARTMENT OF MEDICAL ELCTRONICS</button><br><br>
+<button class="btn">DEPARTMENT OF POLYMER TECHNOLOGY</button><br><br>
+
+<br>
+
+
+		<footer width="1500px" height="300px">
+				<div class="logo5">
+				<div class="head1">
+				<h2>Our Address</h2>
+				<p>Government Polytechnic, Miraj</p>
+				<p>Maji Sainik Vasahat, Vidyanagar, Tal. Miraj</p>
+				<p>District : Sangli</p>
+				<p>Maharashtra</p>
+				</div>
+			<div class="con">	<h2> Contact Us</h2>
+				<p>Email Address : gpmiraj@gmail.com</p>
+				<p>Contact Number : 210123-2323</p>
+				</div>
+</div>
+				</footer>
+				</body>
+				</html>
